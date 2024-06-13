@@ -1,0 +1,44 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.quote-box{
+    width:500px;
+    height:300px;
+    border:2px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 10px;
+}
+
+.quote{
+    width: inherit;
+    font-size:50px;
+    text-align: center;
+}
+
+button{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.quote-btn {
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+    width:300px;
+    height:50px;
+}
+
+.quote-btn:hover{
+    color:white;
+    background-color: black;
+}
