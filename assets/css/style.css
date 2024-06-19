@@ -42,18 +42,25 @@ body{
     font-size:50px;
     text-align: center;
     margin: 20px;
-}
+    font-family: var(--primary-font);
+    font-weight:900;
+    color: var(--blue);
 
+}
 .author {
-    font-size:30px;
+    font-size:40px;
     text-align: center;
     margin: 20px;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: var(--pink);
 }
 
 .container {
     width: inherit;
     display: flex;
     flex-direction: column;
+    font-family: var(--secondary-font);
 }
 
 button{
@@ -66,14 +73,18 @@ button{
 .quote-btn {
     font-size: 20px;
     cursor: pointer;
-    border: 1px solid black;
+    border: 5px solid var(--yellow);
+    background: var(--pink);
     border-radius: 20px;
     width:300px;
     min-height:50px;
     margin-top: 20px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
 }
 
 .quote-btn:hover{
-    color:white;
-    background-color: black;
+    color:black;
+    background-color: var(--yellow);
+    border: 5px solid var(--pink);
 }
