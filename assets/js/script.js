@@ -21,4 +21,21 @@ button.addEventListener('click',function(){
     authorBox.textContent = `-${randomQuote.author}`;
 });
 
+gsap.to(".flower_a", {
+    rotation: 360,
+    duration: 2,
+    repeat: -1,
+    ease: "linear"
+});
+
+gsap.to(".flower_b", {
+    rotation: 360,
+    duration: 2,
+    repeat: -1,
+    ease: "linear"
+});
+
+
+
+
 });
