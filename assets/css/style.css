@@ -26,26 +26,12 @@ body{
     height:100vh;
     background: url(../images/background.jpg);
     background-size:cover;
-}
-
-body::after {
-    content: "";
-    background-image: url(../images/overlay.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    opacity:0.95;
+    overflow: hidden;
 }
 
 .quote-box {
-    width:1000px;
+    max-width:1000px;
+    width:100%;
     height:500px;
     border:20px solid var(--blue);
     display:flex;
@@ -54,7 +40,7 @@ body::after {
     flex-direction: column;
     padding-inline: 10px;
     z-index: 1;
-    background-color: rgba(138, 43, 226,0.5);
+    background-color: rgba(138, 43, 226,0.7);
     border-radius: 20%;
 }
 
@@ -109,64 +95,60 @@ button{
     border: 5px solid var(--pink);
 }
 
-.flower_con {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-}
-
-.flower_con img {
-    width:200px;
-}
-
-.flower_con img:nth-child(1) {
+.f_one {
     position: absolute;
     top: 57%;
-    left: 18%;
+    left: 8%;
+    width:200px;
 }
-.flower_con img:nth-child(2) {
+.f_two {
     position: absolute;
     top: 24%;
     left: 17%;
+    width:300px;
 }
-.flower_con img:nth-child(3) {
+.f_three {
     position: absolute;
     top: 62%;
     left: 60%;
-    width: 300px;
+    width: 400px;
+    z-index: 2;
 }
-.flower_con img:nth-child(4) {
+.f_four {
     position: absolute;
     top: 45%;
     left: 70%;
+    width:200px;
+    z-index: 2;
 }
-.flower_con img:nth-child(5) {
+.f_five {
     position: absolute;
     top: 57%;
     left: 80%;
+    width:300px;
 }
-.flower_con img:nth-child(6) {
+.f_six {
     position: absolute;
-    top: 10%;
+    top: 0%;
     left: 69%;
     width: 400px;
 }
-.flower_con img:nth-child(7) {
+.f_seven {
     position: absolute;
     top: 2%;
-    left: 20%;
+    left: 44%;
+    width:200px;
 }
-.flower_con img:nth-child(8) {
+.f_eight {
     position: absolute;
     top: 65%;
     left: 22%;
+    width:300px;
+    z-index: 2;
 }
-.flower_con img:nth-child(9) {
+.f_nine {
     position: absolute;
     top: 0%;
-    left: 50%;
-    width: 300px;
+    left: -1%;
+    width: 400px;
 }

@@ -21,21 +21,39 @@ button.addEventListener('click',function(){
     authorBox.textContent = `-${randomQuote.author}`;
 });
 
-gsap.to(".flower_a", {
+gsap.to(".left", {
     rotation: 360,
-    duration: 2,
+    duration: 1,
     repeat: -1,
     ease: "linear"
 });
 
-gsap.to(".flower_b", {
-    rotation: 360,
-    duration: 2,
+gsap.to(".right", {
+    rotation: -360,
+    duration: 3,
     repeat: -1,
     ease: "linear"
 });
 
+gsap.from(".quote-box", {
+    y: 200,
+    opacity: 0,
+    duration: 1,
+    ease: "bounce.out"
+});
 
+gsap.from(".right", {
+    y: 200,
+    opacity: 0,
+    duration: 1,
+    ease: "bounce.out"
+});
 
+gsap.from(".left", {
+    y: -200,
+    opacity: 0,
+    duration: 1,
+    ease: "bounce.out"
+});
 
 });
